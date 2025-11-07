@@ -1,0 +1,5 @@
+{
+  "name": "My Website Builder",
+  "description": "A dashboard to view and manage your personal websites. Websites are displayed in a clean, block-style grid, making it easy to see all your projects at a glance.",
+  "requestFramePermissions": []
+}
