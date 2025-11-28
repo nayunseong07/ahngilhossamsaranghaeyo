@@ -5,4 +5,5 @@ export interface Website {
   thumbnailUrl: string;
   lastUpdated: string;
   category: '학업' | '취미' | '활동';
+  path: string;
 }

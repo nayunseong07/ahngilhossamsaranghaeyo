@@ -8,6 +8,7 @@ export const initialWebsites: Website[] = [
     thumbnailUrl: 'https://picsum.photos/seed/ecom/500/300',
     lastUpdated: 'August 16, 2024',
     category: '활동',
+    path: '/blog',
   },
   {
     id: 'website-2',
@@ -16,6 +17,7 @@ export const initialWebsites: Website[] = [
     thumbnailUrl: 'https://picsum.photos/seed/portfolio/500/300',
     lastUpdated: 'July 28, 2024',
     category: '학업',
+    path: '/blog',
   },
   {
     id: 'website-3',
@@ -24,5 +26,15 @@ export const initialWebsites: Website[] = [
     thumbnailUrl: 'https://picsum.photos/seed/travel/500/300',
     lastUpdated: 'August 5, 2024',
     category: '취미',
+    path: '/blog',
+  },
+  {
+    id: 'website-4',
+    name: 'Blog',
+    description: 'adventures from around the world.',
+    thumbnailUrl: 'https://picsum.photos/seed/travel/500/300',
+    lastUpdated: 'August 5, 2024',
+    category: '학업',
+    path: '/space-shooter',
   },
 ];
