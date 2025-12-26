@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Website } from '../../my-website-builder/types';
+import { Website } from '../types';
 import { Link } from 'react-router-dom';
 
 interface WebsiteCardProps {
@@ -20,16 +20,6 @@ const WebsiteCard: React.FC<WebsiteCardProps> = ({ website, onDelete }) => {
           <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{website.name}</h3>
           <p className="text-slate-600 dark:text-slate-400 text-sm flex-grow">{website.description}</p>
           <p className="text-xs text-slate-400 dark:text-slate-500 mt-4">Last Updated: {website.lastUpdated}</p>
-        </div>
-        <div className="p-3 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-700 flex justify-end space-x-2">
-          <button className="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-1 px-3 rounded-md">
-            View
-          </button>
-          <button
-            onClick={() => onDelete(website.id)}
-            className="text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-500 transition-colors py-1 px-3 rounded-md">
-            Delete
-          </button>
         </div>
       </div>
     </Link>

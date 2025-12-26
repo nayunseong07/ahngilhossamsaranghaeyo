@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Website } from '../../my-website-builder/types';
+import { Website } from '../types';
 import WebsiteCard from '../components/WebsiteCard';
 import AddWebsiteButton from '../components/AddWebsiteButton';
 import { initialWebsites } from '../constants';
@@ -18,17 +18,8 @@ const App: React.FC = () => {
     const newId = `website-${Date.now()}`;
     const newCategory = (activeCategory === 'All' ? '활동' : activeCategory) as '학업' | '취미' | '활동';
 
-    const newWebsite: Website = {
-      id: newId,
-      name: 'New Website',
-      description: 'Newly added website.',
-      thumbnailUrl: `https://picsum.photos/seed/${newId}/500/300`,
-      lastUpdated: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
-      category: newCategory,
-    };
-
     setWebsites(prev => {
-      const next = [...prev, newWebsite];
+      const next = [...prev];
       console.log('websites ->', next);
       return next;
     });
@@ -54,7 +45,6 @@ const App: React.FC = () => {
           {filteredWebsites.map(website => (
             <WebsiteCard key={website.id} website={website} onDelete={handleDeleteWebsite} />
           ))}
-          <AddWebsiteButton onClick={handleAddWebsite} />
         </div>
       </main>
     </div>
