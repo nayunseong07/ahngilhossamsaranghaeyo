@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* 카테고리 */}
-        <div className="hidden sm:flex items-center space-x-2 bg-white/10 p-1 rounded-full">
+        <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 items-center space-x-2 bg-white/10 p-1 rounded-full">
           {categories.map((category) => (
             <button
               key={category}
@@ -61,6 +61,7 @@ const Header: React.FC<HeaderProps> = ({
             </button>
           ))}
         </div>
+
 
         {/* 오른쪽 영역 */}
         <div className="relative flex items-center space-x-4">

@@ -109,4 +109,14 @@ export const initialWebsites: Website[] = [
     category: '활동',
     path: '/trip',
   },
+
+    {
+    id: 'website-15',
+    name: 'Task',
+    description: 'Explore the final frontier in this space-themed game.',
+    thumbnailUrl: 'https://item.kakaocdn.net/do/8b236eab20aa129c3e96dcd05e36231ff43ad912ad8dd55b04db6a64cddaf76d',
+    lastUpdated: 'August 5, 2024',
+    category: '학업',
+    path: '/task',
+  },
 ];

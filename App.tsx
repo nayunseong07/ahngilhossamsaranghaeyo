@@ -16,6 +16,7 @@ import Emoji from './src/pages/emoji.tsx';
 import Food from './src/pages/food.tsx';
 import SpaceSpace from './src/pages/spacespace/spacespace.tsx';
 import Trip from './src/pages/trip//trip.tsx';
+import Task from './src/pages/task//task.tsx';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="emoji" element={<Emoji />} />
           <Route path="food" element={<Food />} />
           <Route path="trip" element={<Trip />} />
+          <Route path="task" element={<Task />} />
         </Route>
       </Routes>
     </BrowserRouter>
