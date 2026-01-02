@@ -99,4 +99,14 @@ export const initialWebsites: Website[] = [
     category: '활동',
     path: '/food',
   },
+
+    {
+    id: 'website-14',
+    name: 'Trip',
+    description: 'Explore the final frontier in this space-themed game.',
+    thumbnailUrl: 'https://img.kbs.co.kr/kbs/620/news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg',
+    lastUpdated: 'August 5, 2024',
+    category: '활동',
+    path: '/trip',
+  },
 ];

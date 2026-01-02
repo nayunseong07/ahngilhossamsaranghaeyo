@@ -15,6 +15,7 @@ import Ladder from './src/pages/ladder.tsx';
 import Emoji from './src/pages/emoji.tsx';
 import Food from './src/pages/food.tsx';
 import SpaceSpace from './src/pages/spacespace/spacespace.tsx';
+import Trip from './src/pages/trip//trip.tsx';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="ladder" element={<Ladder />} />
           <Route path="emoji" element={<Emoji />} />
           <Route path="food" element={<Food />} />
+          <Route path="trip" element={<Trip />} />
         </Route>
       </Routes>
     </BrowserRouter>
