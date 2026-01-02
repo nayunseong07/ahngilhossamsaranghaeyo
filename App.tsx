@@ -14,6 +14,7 @@ import Calendar from './src/pages/calendar.tsx';
 import Ladder from './src/pages/ladder.tsx';
 import Emoji from './src/pages/emoji.tsx';
 import Food from './src/pages/food.tsx';
+import SpaceSpace from './src/pages/spacespace/spacespace.tsx';
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
-          <Route path="space-shooter" element={<SpaceShooter />} />
+          {/* <Route path="space-shooter" element={<SpaceShooter />} /> */}
           <Route path="space" element={<Space />} />
+          <Route path="spacespace" element={<SpaceSpace />} />
           <Route path="voca" element={<Voca />} />
-          <Route path="mole" element={<Mole />} />
+          {/* <Route path="mole" element={<Mole />} /> */}
           <Route path="please" element={<Please />} />
           <Route path="camera" element={<Camera />} />
           <Route path="calendar" element={<Calendar />} />

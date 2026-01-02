@@ -33,6 +33,13 @@ export enum MoleType {
   GOLDEN = 'GOLDEN'
 }
 
+export interface MoleProps {
+  id: number;
+  isActive: boolean;
+  type: MoleType;
+  onWhack: (id: number) => void;
+}
+
 export interface GameState {
   score: number;
   timeLeft: number;
